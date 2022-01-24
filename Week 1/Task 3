@@ -1,0 +1,15 @@
+# Task 3
+
+# Write a program that allows user to enter their favourite starter, main course, dessert and drink. 
+
+# Concatenate these and output a message which says – “Your favourite meal is ………with a glass of….”
+
+starter = input("What is your favorite starter?")
+
+main = input("What is your favorite main?")
+
+dessert = input("What is your favorite dessert?")
+
+drink = input("What is your favorite drink?")
+
+print(f"Your favorite meal is {starter}, followed by {main}, for dessert {dessert} with a glass ofs {drink} ")
