@@ -4,12 +4,12 @@
 
 # Concatenate these and output a message which says – “Your favourite meal is ………with a glass of….”
 
-starter = input("What is your favorite starter?")
+starter = input("What is your favourite starter?")
 
-main = input("What is your favorite main?")
+main = input("What is your favourite main?")
 
-dessert = input("What is your favorite dessert?")
+dessert = input("What is your favourite dessert?")
 
-drink = input("What is your favorite drink?")
+drink = input("What is your favourite drink?")
 
-print("Your favorite meal is {starter}, followed by {main}, for dessert {dessert} with a glass of {drink}")
+print("Your favourite meal is {starter}, followed by {main}, for dessert {dessert} with a glass of {drink}")
