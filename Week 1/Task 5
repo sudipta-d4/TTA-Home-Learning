@@ -10,7 +10,7 @@ num2 = int(input("What is the second number?"))
 
 print(num1 + num2)
 
-choice = (input("Choose an operation to perform \n a) add \n b) substract \n c) divide \n d) multiply \n e) to the power of"))
+choice = (input("Choose an operation to perform \n A) add \n B) substract \n C) divide \n D) multiply \n E) to the power of"))
 
 if choice == "A":
 
