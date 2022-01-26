@@ -2,7 +2,7 @@
 
 # Write a program that asks a user for their favourite number between 1 and 100 and then tells them a joke based on the number. You should use a minimum of 3 jokes.
 
-user_num = int(input("What is your favorite number? Choose one between 1 and 100"))
+user_num = int(input("What is your favourite number? Choose one between 1 and 100"))
 
 print(user_num)
 
@@ -12,11 +12,11 @@ if user_num == 4 :
     
 elif user_num > 4 :
 
-    print("Why is your favourate number 4? Because I never met a four like you.")
+    print("Why is your favourite number 4? Because I never met a four like you.")
     
 elif user_num < 4 :
 
-    print("Did you know a ballerina’s favorite number is four! Because there's two-two’s")
+    print("Did you know a ballerina’s favourite number is four! Because there's two-two’s")
     
 else: 
 
