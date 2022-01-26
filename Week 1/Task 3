@@ -12,4 +12,4 @@ dessert = input("What is your favorite dessert?")
 
 drink = input("What is your favorite drink?")
 
-print("Your favorite meal is {starter}, followed by {main}, for dessert {dessert} with a glass ofs {drink} ")
+print("Your favorite meal is {starter}, followed by {main}, for dessert {dessert} with a glass of {drink}")
