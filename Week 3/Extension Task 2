@@ -1,0 +1,32 @@
+Extension Task 2
+
+# Ask the user for their target grade and print this with their 
+mark
+# If their target grade > exam grade display a suitable 
+message
+# If their target grade = exam grade display a suitable 
+message
+# If their target grade < exam grade display a suitable 
+message
+
+target = input("What grade were you aimiing for?")
+
+if target == grade:
+    print("Well done! You achieved your desired grade!")
+    print("Your grade was", grade, "and you were aiming for", target)
+    
+elif target == "A*" and grade == "A":
+      print("You need to work harder")
+      print("Your grade was", grade, "and you were aiming for", target)
+
+elif target == "A" and grade == "A*":
+      print("You got higher than your target grade! Well done!")
+      print("Your grade was", grade, "and you were aiming for", target)
+
+elif target < grade:
+      print("You need to work harder")
+      print("Your grade was", grade, "and you were aiming for", target)
+
+else:
+     print("You got higher than your target grade! Well done!")
+     print("Your grade was", grade, "and you were aiming for", target)
