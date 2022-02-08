@@ -34,5 +34,5 @@ elif choice == "E":
     
 else:
 
-    print("Enter choice A or B or C or D or E")
+    print("choice A or B or C or D or E")
     
