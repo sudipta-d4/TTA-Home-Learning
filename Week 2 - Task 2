@@ -1,0 +1,22 @@
+Task 2
+
+# As an extension to the motorbike task that costs £2000 and loses 10% of its value every year. 
+# Set up a function that performs the calculation by passing in parameters. 
+# Then using a loop, print the value of the bike every following year until it falls below £100.
+
+motorbike_cost = 2000.00
+cost = motorbike_cost
+year = int(input("what is the year?"))
+
+print("yearly depreciation of motorbike value:")
+
+while cost >= 1000.0:
+    print("year ", year, ": ", cost)
+year = year + 1
+cost = motorbike_cost/  10
+
+def calculate_bike_cost():
+  value_every_year = "current_value"
+  loses = "What is 10% of the orginal value?"
+  yearly = str("current_value") + "value_every_year" + "will increase by" + "loses" + "every year untill it falls belows £1000"
+  return yearly 
