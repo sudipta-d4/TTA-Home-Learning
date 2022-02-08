@@ -1,0 +1,43 @@
+Task 3
+
+# Write a program which will ask for two numbers from a user.
+# Then offer an option menu to the user giving them a choice of maths operators. 
+# Once the user has selected which operator they wish to use, perform the calculation by using a procedure and passing parameters.
+
+def calculator():
+
+    num1 = int(input("What is your first number?"))
+    num2 = int(input("What is the second number?"))
+
+print(num1 + num2)
+
+choice = (input("Choose an arithmatic operation to perform \n A) add \n B) subtract \n C) divide \n D) multiply \n E) to the power of"))
+
+if choice == "A":
+
+    print(num1 + num2)
+    
+elif choice == "B":
+
+    print(num1 - num2)
+    
+elif choice == "C":
+
+    print(num1 / num2)
+    
+elif choice == "D":
+
+    print(num1 * num2)
+    
+elif choice == "E":
+
+    print(num1 ** num2)
+    
+else:
+
+    print("Enter choice A or B or C or D or E")
+
+except ZeroDivisionError:
+            
+    print("You can't divide by zero!")
+    
