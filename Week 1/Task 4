@@ -2,16 +2,13 @@
 
 # A motorbike costs £2000 and loses 10% of its value every year. Using a loop, print the value of the bike every following year until it falls below £1000.
 
-x = False
+motorbike_cost = 2000.00
+cost = motorbike_cost
+year = int(input("what is the year?"))
 
-y = 2000
+print("yearly depreciation of motorbike value:")
 
-while x == False:
-
-print("£", y)
-    
-y = y * 0.9
-
-if y < 1000:
-    
-x = True
+while cost >= 1000.0:
+    print("year ", year, ": ", cost)
+year = year + 1
+cost = motorbike_cost/  10
