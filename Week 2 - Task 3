@@ -11,7 +11,7 @@ def calculator():
 
 print(num1 + num2)
 
-choice = (input("Choose an arithmatic operation to perform \n A) add \n B) subtract \n C) divide \n D) multiply \n E) to the power of"))
+choice = (input("Choose an arithmetic operation to perform \n A) add \n B) subtract \n C) divide \n D) multiply \n E) to the power of"))
 
 if choice == "A":
 
