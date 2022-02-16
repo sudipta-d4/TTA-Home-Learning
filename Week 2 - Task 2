@@ -17,6 +17,6 @@ cost = motorbike_cost/  10
 
 def calculate_bike_cost():
   value_every_year = "current_value"
-  loses = "What is 10% of the orginal value?"
-  yearly = str("current_value") + "value_every_year" + "will increase by" + "loses" + "every year untill it falls belows £1000"
+  loses = "What is 10% of the original value?"
+  yearly = str("current_value") + "value_every_year" + "will increase by" + "loses" + "every year untill it falls below £1000"
   return yearly 
