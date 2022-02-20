@@ -9,7 +9,7 @@ message
 # If their target grade < exam grade display a suitable 
 message
 
-target = input("What grade were you aimiing for?")
+target = input("What grade were you aiming for?")
 
 if target == grade:
     print("Well done! You achieved your desired grade!")
