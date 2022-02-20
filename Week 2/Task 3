@@ -36,8 +36,4 @@ elif choice == "E":
 else:
 
     print("Enter choice A or B or C or D or E")
-
-except ZeroDivisionError:
-            
-    print("You can't divide by zero!")
     
