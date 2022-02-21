@@ -1,0 +1,28 @@
+# Task 1
+
+# Write a program that allows you to enter 4 numbers and stores them in a file called “Numbers” 3, 45, 83, 21 
+
+# Have a go at ‘w’ ‘r’ ‘a’  
+
+numbers_file = input("3", "45", "83", "21")
+
+# Create a file
+
+numbers_file = open("numbers.text_file", "w")
+numbers_file.close()
+
+# Reading a file
+
+with open("numbers.txt", "r") as numbers_file:
+    data = numbers_file.read().replace('\n', ',')
+
+numbers_file.close()
+
+# Appending a file
+
+numbers_file = open("numbers.txt", "a")
+
+numbers_file.write("Where has it gone?")
+
+numbers_file.close()
+
