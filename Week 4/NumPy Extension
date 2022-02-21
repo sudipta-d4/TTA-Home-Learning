@@ -1,0 +1,40 @@
+# Extension Task
+
+# Task 1
+
+# Create the following pattern without hardcoding. Use only NumPy  functions.
+#>array([1, 1, 1, 2, 2, 2, 3, 3, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3])
+
+type_1 =[1, 1, 1]
+type_2 =[2, 2, 2]
+type_3 =[3, 3, 3]
+type_123 =[1, 2, 3]
+type_123_1 =[1, 2, 3]
+type_123_2 =[1, 2, 3]
+
+print (type_1 + type_2 + type_3 + type_123 + type_123_1 + type_123_2)
+
+# Task 2 
+
+# In two arrays a ( 1,2,3,4,5) and b ( 4,5,6,7,8,9)
+# remove all repeating items present in array b
+
+a = np.array([1,2,3,4,5])
+b = np.array([4,5,6,7,8,9])
+c = np.newarray1d(a,b)
+
+print(c)
+
+# Task 3 
+
+# Get all items between 3 and 7 from a and b and sum them together
+
+a = np.array([1,2,3,4,5])
+b = np.array([4,5,6,7,8,9])
+
+print(a[3:7])
+
+print(b[3:7])
+
+print(sum)
+
