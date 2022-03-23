@@ -1,0 +1,27 @@
+# Task 1
+
+# Create your own Flow Diagram, a subject of your own choice.
+
+# Example: Fast food order and convert it into code.
+
+See 'Data Science - Python 2.pdf'
+
+# Task 2
+
+# As an extension to the motorbike task that costs £2000 and loses 10% of its value every year. 
+
+# Set up a function that performs the calculation by passing in parameters. 
+
+# Then using a loop, print the value of the bike every following year until it falls below £100.
+
+See 'Data Science - Python 2.ipynb'
+
+# Task 3
+
+# Write a program which will ask for two numbers from a user.
+
+# Then offer an option menu to the user giving them a choice of maths operators. 
+
+# Once the user has selected which operator they wish to use, perform the calculation by using a procedure and passing parameters.
+
+See 'Data Science - Python 2.ipynb'
