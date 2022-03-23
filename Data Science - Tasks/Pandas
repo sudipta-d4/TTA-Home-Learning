@@ -1,0 +1,37 @@
+# Lesson Tasks (See 'Data Science - Pandas.ipynb')
+
+# Create a CSV file of 15 holiday destinations for a website
+
+# 1. Add in a column of destinations
+
+# 2. Add in a column that shows feedback score out of 10 for that destination
+
+# 3. Add in a column for average hotel star rating for those destinations 
+
+# 4. Add in a column for number of all-inclusive hotels within each destination
+
+# 5. Add in the most visited city in each destination
+
+# Task 1 (See 'Data Science - Pandas.ipynb')
+
+# 1. How many rows and columns are there in your file?
+
+# 2. Print row 3-8 ( using iloc/loc).
+
+# 3. Find the mean number of all-inclusive hotels across all destinations.
+
+# 4. Find the lowest scoring destination.
+
+# 5. Find the highest scoring destination.
+
+# 6. Find all the destinations where there are more than 9 all-inclusive hotels.
+
+# 7. Filter the data by score above 8.
+
+# 8. Filter the data score below 2 ( I need to know if these destinations should be removed or there is a problem).
+
+# Extension Task (See 'Data Science - Pandas.ipynb')
+
+# 1. Is there a correlation between number of all-inclusive hotels and score?
+
+# 2. Create a data visualisation diagram to show destination and highest scores?
