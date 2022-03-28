@@ -23,6 +23,7 @@
 
 # 6. Data Visualisation - Completed
 - (See 'Data Science - Data Visualisation with Altair.ipynb')
+- (See 'Data Science – Data Visualisation with Altair.pdf - Visible Graphs')
 
 # 7. Algorithms (Machine Learning
 - (See 'Data Science – Algorithms (Machine Learning).pdf')
