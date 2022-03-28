@@ -1,8 +1,7 @@
 # TTA-Home-Learning
 
-# An intensive 14-week course, focused on the fundamentals of data science delivered through a combination of interactive group learning and home learning tasks. 
-# During the course I built strong skills in the manipulation of data using NumPy and Pandas whilst being able to visualise the data using Python libraries including 
-# matplotlib, Altair and other software packages such as Power BI.
+- An intensive 14-week course, focused on the fundamentals of data science delivered through a combination of interactive group learning and home learning tasks. 
+- During the course I built strong skills in the manipulation of data using NumPy and Pandas whilst being able to visualise the data using Python libraries including matplotlib, Altair and other software packages such as Power BI.
 
 # Home Learning Tasks: (See questions in individual folder)
 
@@ -33,6 +32,10 @@
 
 # 9. Deep Learning (TF) & AI Ethics - Completed
 - (See 'Data Science – Deep Learning (TF) and AI Ethics.pdf')
+
+# 10. 
+
+# 11.
 
 
 
