@@ -1,3 +1,5 @@
+# Compulsory
+
 # Imagine the following scenario: You are a data analyst at an organisation. You have been given a data set and asked to 
 # create a meaningful data visualisation using this data. Using the ggplotin-built data sets in RStudio and the qplot function, 
 # get your creative juices flowing and create a meaningful and impactful data visualisation using your preferred data set.
@@ -55,6 +57,8 @@ barplot(Grades,
         names.arg = c("English", "Science", "Business.", "Mathematics", "Psychology."),
         col = "gray",
         horiz = FALSE)
+
+# Additional
 
 # 1. Write a R program to take input from the user (name and age) and display the values.
 
