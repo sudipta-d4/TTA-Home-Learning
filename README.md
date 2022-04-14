@@ -34,10 +34,9 @@
 # 9. Deep Learning (TF) & AI Ethics - Completed
 - (See 'Data Science – Deep Learning (TF) and AI Ethics.pdf')
 
-# 10. 
+# 10. Databases Theory & SQL - Completed
+- (See 'Data Science - MySQL')
 
-# 11.
-
-
-
-
+# 11. Data Fundamentals & R Programming - Completed
+- (See 'Data Science - RStudio.r') 
+- (See 'Data Science - RStudio with Visible Graphs.pdf') 
