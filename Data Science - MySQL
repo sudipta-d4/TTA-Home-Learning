@@ -1,0 +1,193 @@
+mysql> # Create a relational database (2 tables)
+mysql> CREATE DATABASE taxi_services;
+Query OK, 1 row affected (0.09 sec)
+
+mysql> # Use Database
+mysql> USE taxi_services
+Database changed
+
+mysql> # Create Table 1 - Customer Details
+mysql> CREATE TABLE CustomerDetails(
+    -> Customer_ID INT NOT NULL,
+    -> Name VARCHAR(20) NOT NULL,
+    -> Telephone CHAR(11) NOT NULL,
+    -> Price DECIMAL NOT NULL,
+    -> Rating INT NOT NULL,
+    -> PRIMARY KEY (Customer_ID)
+    -> );
+Query OK, 0 rows affected (1.68 sec)
+
+mysql> EXPLAIN CustomerDetails;
++-------------+---------------+------+-----+---------+-------+
+| Field       | Type          | Null | Key | Default | Extra |
++-------------+---------------+------+-----+---------+-------+
+| Customer_ID | int           | NO   | PRI | NULL    |       |
+| Name        | varchar(20)   | NO   |     | NULL    |       |
+| Telephone   | char(11)      | NO   |     | NULL    |       |
+| Price       | decimal(10,0) | NO   |     | NULL    |       |
+| Rating      | int           | NO   |     | NULL    |       |
++-------------+---------------+------+-----+---------+-------+
+5 rows in set (0.08 sec)
+
+mysql> INSERT INTO CustomerDetails (Customer_ID, Name, Telephone, Price, Rating)
+    -> VALUES ('1', 'Thomas', '07634562187', '24.37', '3'),
+    -> ('2', 'Becca', '07456321789', '36.75', '4'),
+    -> ('3', 'Charlie', '07939502681', '55.69', '5'),
+    -> ('4', 'Ellie', '07845269715', '45.67', '4'),
+    -> ('5', 'Elijah', '07932418968', '24.99', '3'),
+    -> ('6', 'Ali', '07965241357', '67.99', '5'),
+    -> ('7', 'Sean', '07985632148', '45.67', '3'),
+    -> ('8', 'Harry', '07965416989', '34.56', '4'),
+    -> ('9', 'Sophia', '07964351481', '67.90', '5'),
+    -> ('10', 'Lucy', '07154368923', '70.30', '5');
+Query OK, 10 rows affected, 10 warnings (0.53 sec)
+Records: 10  Duplicates: 0  Warnings: 10
+
+mysql> # Update a Record
+mysql> SELECT * FROM CustomerDetails;
++-------------+---------+-------------+-------+--------+
+| Customer_ID | Name    | Telephone   | Price | Rating |
++-------------+---------+-------------+-------+--------+
+|           1 | Thomas  | 07634562187 |    24 |      3 |
+|           2 | Becca   | 07456321789 |    37 |      4 |
+|           3 | Charlie | 07939502681 |    56 |      5 |
+|           4 | Ellie   | 07845269715 |    46 |      4 |
+|           5 | Elijah  | 07932418968 |    25 |      3 |
+|           6 | Ali     | 07965241357 |    68 |      5 |
+|           7 | Sean    | 07985632148 |    46 |      3 |
+|           8 | Harry   | 07965416989 |    35 |      4 |
+|           9 | Sophia  | 07964351481 |    68 |      5 |
+|          10 | Lucy    | 07154368923 |    70 |      5 |
++-------------+---------+-------------+-------+--------+
+10 rows in set (0.00 sec)
+
+mysql> UPDATE CustomerDetails
+    -> SET Name = 'Luke'
+    -> WHERE Customer_ID = 6;
+Query OK, 1 row affected (0.09 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> # Delete a Record
+mysql> SELECT * FROM CustomerDetails;
++-------------+---------+-------------+-------+--------+
+| Customer_ID | Name    | Telephone   | Price | Rating |
++-------------+---------+-------------+-------+--------+
+|           1 | Thomas  | 07634562187 |    24 |      3 |
+|           2 | Becca   | 07456321789 |    37 |      4 |
+|           3 | Charlie | 07939502681 |    56 |      5 |
+|           4 | Ellie   | 07845269715 |    46 |      4 |
+|           5 | Elijah  | 07932418968 |    25 |      3 |
+|           6 | Luke    | 07965241357 |    68 |      5 |
+|           7 | Sean    | 07985632148 |    46 |      3 |
+|           8 | Harry   | 07965416989 |    35 |      4 |
+|           9 | Sophia  | 07964351481 |    68 |      5 |
+|          10 | Lucy    | 07154368923 |    70 |      5 |
++-------------+---------+-------------+-------+--------+
+10 rows in set (0.01 sec)
+
+mysql> DELETE FROM CustomerDetails
+    -> WHERE Customer_ID = '8';
+Query OK, 1 row affected (0.14 sec)
+
+mysql> # Create Table 2 - Car Details
+mysql> CREATE TABLE CarDetails(
+    -> Car_ID INT NOT NULL,
+    -> Description VARCHAR(20) NOT NULL,
+    -> Make VARCHAR(20) NOT NULL,
+    -> Colour VARCHAR(20) NOT NULL,
+    -> Reg VARCHAR(20) NOT NULL,
+    -> PRIMARY KEY (Car_ID)
+    -> );
+Query OK, 0 rows affected (0.93 sec)
+
+mysql> EXPLAIN CarDetails;
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| Car_ID      | int         | NO   | PRI | NULL    |       |
+| Description | varchar(20) | NO   |     | NULL    |       |
+| Make        | varchar(20) | NO   |     | NULL    |       |
+| Colour      | varchar(20) | NO   |     | NULL    |       |
+| Reg         | varchar(20) | NO   |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+5 rows in set (0.06 sec)
+
+mysql> INSERT INTO CarDetails (Car_ID, Description, Make, Colour, Reg)
+    -> VALUES ('1', 'Comfort', 'Toyota Prius', 'Grey', 'WD70 YBV'),
+    -> ('2', 'Comfort', 'Hyundai Ioniq', 'Black', 'LM40 RTY'),
+    -> ('3', 'Comfort', 'Honda Insight', 'Blue', 'BF14 TRP'),
+    -> ('4', 'Electric', 'Kia e-Niro', 'White', 'BG23 RTY'),
+    -> ('5', 'Electric', 'Tesla Model 3', 'Silver', 'EF45 OUY'),
+    -> ('6', 'Comfort XL', 'Mercedes Vito', 'Silver', 'TY56 FGY'),
+    -> ('7', 'Comfort XL', 'Ford Galaxy', 'White', 'BG65 UKJ'),
+    -> ('8', 'Executive', 'BMW 5 Series', 'Black', 'EF56 TYU'),
+    -> ('9', 'Executive', 'Audi A6', 'Blue', 'AE57 GFD'),
+    -> ('10', 'Executive', 'Mercedes E-Class', 'Grey', 'KL67 YHJ');
+Query OK, 10 rows affected (0.19 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> # Update a Record
+mysql> SELECT * FROM CarDetails;
++--------+-------------+------------------+--------+----------+
+| Car_ID | Description | Make             | Colour | Reg      |
++--------+-------------+------------------+--------+----------+
+|      1 | Comfort     | Toyota Prius     | Grey   | WD70 YBV |
+|      2 | Comfort     | Hyundai Ioniq    | Black  | LM40 RTY |
+|      3 | Comfort     | Honda Insight    | Blue   | BF14 TRP |
+|      4 | Electric    | Kia e-Niro       | White  | BG23 RTY |
+|      5 | Electric    | Tesla Model 3    | Silver | EF45 OUY |
+|      6 | Comfort XL  | Mercedes Vito    | Silver | TY56 FGY |
+|      7 | Comfort XL  | Ford Galaxy      | White  | BG65 UKJ |
+|      8 | Executive   | BMW 5 Series     | Black  | EF56 TYU |
+|      9 | Executive   | Audi A6          | Blue   | AE57 GFD |
+|     10 | Executive   | Mercedes E-Class | Grey   | KL67 YHJ |
++--------+-------------+------------------+--------+----------+
+10 rows in set (0.00 sec)
+
+mysql> UPDATE CarDetails
+    -> SET Colour = 'Blue'
+    -> WHERE Car_ID = 5;
+Query OK, 1 row affected (0.04 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> # Delete a Record
+mysql> SELECT * FROM CarDetails;
++--------+-------------+------------------+--------+----------+
+| Car_ID | Description | Make             | Colour | Reg      |
++--------+-------------+------------------+--------+----------+
+|      1 | Comfort     | Toyota Prius     | Grey   | WD70 YBV |
+|      2 | Comfort     | Hyundai Ioniq    | Black  | LM40 RTY |
+|      3 | Comfort     | Honda Insight    | Blue   | BF14 TRP |
+|      4 | Electric    | Kia e-Niro       | White  | BG23 RTY |
+|      5 | Electric    | Tesla Model 3    | Blue   | EF45 OUY |
+|      6 | Comfort XL  | Mercedes Vito    | Silver | TY56 FGY |
+|      7 | Comfort XL  | Ford Galaxy      | White  | BG65 UKJ |
+|      8 | Executive   | BMW 5 Series     | Black  | EF56 TYU |
+|      9 | Executive   | Audi A6          | Blue   | AE57 GFD |
+|     10 | Executive   | Mercedes E-Class | Grey   | KL67 YHJ |
++--------+-------------+------------------+--------+----------+
+10 rows in set (0.00 sec)
+
+mysql> DELETE FROM CarDetails
+    -> WHERE Car_ID = '2';
+Query OK, 1 row affected (0.04 sec)
+
+mysql> # Join Tables
+mysql> SELECT CustomerDetails.Customer_ID, CarDetails.Car_ID, CustomerDetails.Name
+    -> FROM CarDetails
+    -> INNER JOIN CustomerDetails ON CarDetails.Customer_ID=CustomerDetails.Customer_ID
+
+mysql> # Run a Simple Query (one field/column) searching one table
+mysql> SELECT * FROM CarDetails
+    -> WHERE Description = "Comfort";
+
+mysql> # Run a Complex Query (more than one field/column) to demonstrate the relations between the 2 tables
+mysql> SELECT * FROM CarDetails
+    -> WHERE Description = "Comfort XL" AND Colour = "Black"
+
+mysql> # Retrieve all your data sorted in ascending order on an appropriate field (one table)
+mysql> SELECT * FROM CustomerDetails
+    -> ORDER BY Name;
+
+mysql> # Filter data using comparison operators (one table)
+mysql> SELECT Car_ID FROM CarDetails WHERE Description = 'Executive';
