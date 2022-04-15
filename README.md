@@ -1,7 +1,7 @@
 # TTA-Home-Learning
 
 - An intensive 14-week course, focused on the fundamentals of data science delivered through a combination of interactive group learning and home learning tasks. 
-- During the course I built strong skills in the manipulation of data using NumPy and Pandas whilst being able to visualise the data using Python libraries including matplotlib, Altair and other software packages such as Power BI.
+- Completed Python fundamentals, including key data science libraries such as NumPy, Pandas, SciKit, and Tensorflow. In addition to this I gained a solid grounding in machine learning algorithms, relational database management SQL, data visualisation/business intelligence packages such as Power BI, and R programming language. 
 
 # Home Learning Tasks: (See questions in individual folder)
 
